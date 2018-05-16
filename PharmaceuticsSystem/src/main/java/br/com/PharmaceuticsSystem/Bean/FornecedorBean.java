@@ -43,7 +43,7 @@ public class FornecedorBean implements Serializable {
 	public void salvar() {
 		try {
 			FornecedorDAO fornecedorDAO = new FornecedorDAO();
-			fornecedorDAO.salvar(fornecedor);
+			fornecedorDAO.merge(fornecedor);
 
 			novo();
 			
@@ -81,6 +81,9 @@ public class FornecedorBean implements Serializable {
 			Messages.addFlashGlobalError("Ocorreu um erro ao tentar remover o Fornecedor");
 			erro.printStackTrace();
 		}
+	}
+	public void editar(ActionEvent evento){
+		fornecedor = (Fornecedor) evento.getComponent().getAttributes().get("fornecedorSelecionado");
 	}
 
 }
