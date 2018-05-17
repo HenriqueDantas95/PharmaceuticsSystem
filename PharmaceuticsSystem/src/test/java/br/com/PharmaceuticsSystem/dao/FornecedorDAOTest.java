@@ -1,5 +1,7 @@
 package br.com.PharmaceuticsSystem.dao;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.List;
 
 import org.junit.Ignore;
@@ -17,6 +19,10 @@ public class FornecedorDAOTest {
 		
 		FornecedorDAO fornecedorDAO = new FornecedorDAO();
 		fornecedorDAO.salvar(fornecedor);
+		
+		Fornecedor atual = fornecedorDAO.buscar(fornecedor.getCodigo());
+		
+		assertEquals("Teste 01", "Seridó Cosméticos", atual.getNome());
 	}
 	
 	@Test
