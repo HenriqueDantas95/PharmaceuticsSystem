@@ -10,13 +10,13 @@ public class Administrador extends GenericDomain{
 	@Column(length = 50, nullable = false)
 	private String nome;
 	
-	@Column(length = 14, nullable = false)
+	@Column(length = 15, nullable = false)
 	private String cpf;
 	
 	@Column(length = 100, nullable = false)
 	private String endereco;
 	
-	@Column(length = 13, nullable = false)
+	@Column(length = 18, nullable = false)
 	private String telefone;
 	
 	@Column(length = 100, nullable = false)

@@ -30,10 +30,12 @@
 		<property name="show_sql">true</property>
 
 		<!-- Cria as tabelas do banco de dados -->
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">validate</property>
+		<!-- <property name="hbm2ddl.auto">create</property> -->
 		
 		<!-- Mapeamento das tabelas -->
 		<mapping class="br.com.PharmaceuticsSystem.domain.Fornecedor" />
+		<mapping class="br.com.PharmaceuticsSystem.domain.Administrador" />
 		
 	</session-factory>
 
