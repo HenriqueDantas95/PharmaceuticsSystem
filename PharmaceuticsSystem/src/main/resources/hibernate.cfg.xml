@@ -31,12 +31,17 @@
 
 		<!-- Cria as tabelas do banco de dados -->
 		<property name="hbm2ddl.auto">validate</property>
-		<!-- <property name="hbm2ddl.auto">create</property> -->
 		
 		<!-- Mapeamento das tabelas -->
+		<mapping class="br.com.PharmaceuticsSystem.domain.Estado" />
+		<mapping class="br.com.PharmaceuticsSystem.domain.Cidade" />
+		<mapping class="br.com.PharmaceuticsSystem.domain.Produto" />
 		<mapping class="br.com.PharmaceuticsSystem.domain.Fornecedor" />
-		<mapping class="br.com.PharmaceuticsSystem.domain.Administrador" />
-		
+		<mapping class="br.com.PharmaceuticsSystem.domain.Cliente" />
+		<mapping class="br.com.PharmaceuticsSystem.domain.Funcionario" />
+		<mapping class="br.com.PharmaceuticsSystem.domain.Pessoa" />
+		<mapping class="br.com.PharmaceuticsSystem.domain.Usuario" />
+
 	</session-factory>
 
 </hibernate-configuration>

@@ -3,30 +3,17 @@ package br.com.PharmaceuticsSystem.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-@SuppressWarnings("serial")
+
 @Entity
 public class Fornecedor extends GenericDomain {
 	@Column(length = 50, nullable = false)
-	private String nome;
+	private String descricao;
 	
-	@Column(length = 13, nullable = false)
-	private String telefone;
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getTelefone() {
-		return telefone;
-	}
-
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public String getDescricao() {
+		return descricao;
 	}
 	
-	
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 }
