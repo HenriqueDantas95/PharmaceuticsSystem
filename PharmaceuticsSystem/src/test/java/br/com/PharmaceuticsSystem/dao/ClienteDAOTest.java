@@ -11,7 +11,7 @@ import br.com.PharmaceuticsSystem.domain.Pessoa;
 
 public class ClienteDAOTest {
 	@Test
-	
+	@Ignore
 	public void salvar() throws ParseException {
 		PessoaDAO pessoaDAO = new PessoaDAO();
 		Pessoa pessoa = pessoaDAO.buscar(2L);

@@ -8,6 +8,7 @@ import br.com.PharmaceuticsSystem.util.HibernateUtil;
 
 public class HibernateUtilTest {
 	@Test
+	@Ignore
 	public void conectar(){
 		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
 		sessao.close();

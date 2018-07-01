@@ -1,5 +1,7 @@
 package br.com.PharmaceuticsSystem.dao;
 
+import java.util.List;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -8,7 +10,7 @@ import br.com.PharmaceuticsSystem.domain.Usuario;
 
 public class UsuarioDAOTest {
 	@Test
-	
+	@Ignore
 	public void salvar(){
 		PessoaDAO pessoaDAO = new PessoaDAO();
 		Pessoa pessoa = pessoaDAO.buscar(1L);
@@ -27,5 +29,17 @@ public class UsuarioDAOTest {
 		usuarioDAO.salvar(usuario);
 		
 		System.out.println("Usuário salvo com sucesso.");
+	}
+	
+	@Test
+	public void listar() {
+		UsuarioDAO usuarioDAO = new UsuarioDAO();
+		List<Usuario> resultado = usuarioDAO.listar();
+		
+		System.out.println("Total de Registros Encontrados: " + resultado.size());
+		
+		for (Usuario usuario : resultado) {
+			System.out.println(usuario.getCodigo() + " - " + usuario.getAtivoFormatado() + " - " + usuario.getSenha() + " - " + usuario.getTipoFormatado() + " - " + usuario.getPessoa());
+		}
 	}
 }

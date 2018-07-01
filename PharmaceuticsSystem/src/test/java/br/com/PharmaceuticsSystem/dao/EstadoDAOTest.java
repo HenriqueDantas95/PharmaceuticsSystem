@@ -25,8 +25,8 @@ public class EstadoDAOTest {
 	}
 	
 	
-@Test
-	
+	@Test
+	@Ignore
 	public void merge(){
 		Estado estado = new Estado();
 		estado.setNome("Goiás");

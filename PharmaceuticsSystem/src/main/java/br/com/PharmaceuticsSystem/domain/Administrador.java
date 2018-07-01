@@ -61,6 +61,6 @@ public class Administrador extends GenericDomain{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 	
+	//Linha de Teste
 }
