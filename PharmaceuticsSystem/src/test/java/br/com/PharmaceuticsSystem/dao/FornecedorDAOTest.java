@@ -11,7 +11,7 @@ import br.com.PharmaceuticsSystem.domain.Fornecedor;
 
 public class FornecedorDAOTest {
 	@Test
-	@Ignore
+	//@Ignore
 	public void salvar(){
 		Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setDescricao("Seridó Cosméticos");
@@ -25,7 +25,7 @@ public class FornecedorDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void listar() {
 		FornecedorDAO fornecedorDAO = new FornecedorDAO();
 		List<Fornecedor> resultado = fornecedorDAO.listar();
@@ -38,7 +38,7 @@ public class FornecedorDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void buscar(){
 		Long codigo = 1L;
 		
@@ -54,7 +54,7 @@ public class FornecedorDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void excluir(){
 		Long codigo = 2L;
 		FornecedorDAO fornecedorDAO = new FornecedorDAO();
@@ -70,7 +70,7 @@ public class FornecedorDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void editar(){
 		Long codigo = 1L;
 		FornecedorDAO fornecedorDAO = new FornecedorDAO();

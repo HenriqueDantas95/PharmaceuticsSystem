@@ -11,7 +11,6 @@ import br.com.PharmaceuticsSystem.domain.Estado;
 public class CidadeDAOTest {
 	
 	@Test
-	
 	public void salvar() {
 		Long codigoEstado = 5L;
 		

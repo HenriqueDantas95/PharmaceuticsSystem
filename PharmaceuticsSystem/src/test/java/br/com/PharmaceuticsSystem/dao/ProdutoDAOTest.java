@@ -12,7 +12,7 @@ import br.com.PharmaceuticsSystem.domain.Produto;
 public class ProdutoDAOTest {
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void salvar(){
 		FornecedorDAO fornecedorDAO = new FornecedorDAO();
 		Fornecedor fornecedor = fornecedorDAO.buscar(new Long("1"));
@@ -30,7 +30,7 @@ public class ProdutoDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void listar() {
 		ProdutoDAO ProdutoDAO = new ProdutoDAO();
 		List<Produto> resultado = ProdutoDAO.listar();
@@ -43,7 +43,21 @@ public class ProdutoDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
+	public void buscar() {
+		ProdutoDAO produtoDAO = new ProdutoDAO();
+		Produto produto = produtoDAO.buscar(new Long(1));
+		
+		if(produto == null) {
+			System.out.println("Nenhum registro encontrado");
+		}else {
+			System.out.println("Registro encontrado:");
+			System.out.println(produto.getCodigo() + " - " + produto.getDescricao() + " - " + produto.getQuantidade() + " - " + produto.getPreco() + " - " + produto.getFornecedor());
+		}
+	}
+	
+	@Test
+	//@Ignore
 	public void editar() {
 		ProdutoDAO produtoDAO = new ProdutoDAO();
 		Produto produto = produtoDAO.buscar(new Long(1));
@@ -60,7 +74,7 @@ public class ProdutoDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void excluir() {
 		ProdutoDAO produtoDAO = new ProdutoDAO();
 		Produto produto = produtoDAO.buscar(new Long(1));

@@ -10,7 +10,7 @@ import br.com.PharmaceuticsSystem.domain.Pessoa;
 
 public class PessoaDAOTest {
 	@Test
-	@Ignore
+	//@Ignore
 	public void salvar(){
 		short v = 1;
 		Pessoa pessoa = new Pessoa();
@@ -37,7 +37,7 @@ public class PessoaDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void listar() {
 		PessoaDAO pessoaDAO = new PessoaDAO();
 		List<Pessoa> resultado = pessoaDAO.listar();
@@ -52,7 +52,7 @@ public class PessoaDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void buscar() {
 		PessoaDAO pessoaDAO = new PessoaDAO();
 		Pessoa pessoa = pessoaDAO.buscar(new Long("1"));
@@ -68,7 +68,7 @@ public class PessoaDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void editar() {
 		PessoaDAO pessoaDAO = new PessoaDAO();
 		Pessoa pessoa = pessoaDAO.buscar(new Long(1));
@@ -84,7 +84,7 @@ public class PessoaDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void excluir() {
 		PessoaDAO pessoaDAO = new PessoaDAO();
 		Pessoa pessoa = pessoaDAO.buscar(new Long(1));

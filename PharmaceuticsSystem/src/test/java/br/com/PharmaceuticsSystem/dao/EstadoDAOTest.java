@@ -9,7 +9,7 @@ import br.com.PharmaceuticsSystem.domain.Estado;
 
 public class EstadoDAOTest {
 	@Test
-	@Ignore
+	//@Ignore
 	public void salvar(){
 		Estado estado = new Estado();
 		estado.setNome("Rio de Janeiro");
@@ -26,7 +26,7 @@ public class EstadoDAOTest {
 	
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void merge(){
 		Estado estado = new Estado();
 		estado.setNome("Goiás");
@@ -42,7 +42,7 @@ public class EstadoDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void listar() {
 		EstadoDAO estadoDAO = new EstadoDAO();
 		List<Estado> resultado = estadoDAO.listar();
@@ -55,7 +55,7 @@ public class EstadoDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void buscar(){
 		Long codigo = 1L;
 		
@@ -71,7 +71,7 @@ public class EstadoDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void excluir(){
 		Long codigo = 2L;
 		EstadoDAO estadoDAO = new EstadoDAO();
@@ -87,7 +87,7 @@ public class EstadoDAOTest {
 	}
 	
 	@Test
-	@Ignore
+	//@Ignore
 	public void editar(){
 		Long codigo = 1L;
 		EstadoDAO estadoDAO = new EstadoDAO();
